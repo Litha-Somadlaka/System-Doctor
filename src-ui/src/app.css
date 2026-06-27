@@ -1,0 +1,54 @@
+:root {
+    /* Stark Industries Palette */
+    --bg-core: #050608;
+    --bg-panel: rgba(10, 15, 20, 0.65);
+
+    --neon-cyan: #00f3ff;
+    --neon-blue: #0066ff;
+    --neon-orange: #ff9e00;
+    --neon-red: #ff003c;
+
+    --text-main: #e0f8ff;
+    --text-dim: #5c7c8a;
+
+    --font-tech: "Segoe UI Mono", "Consolas", "Monaco", monospace;
+
+    --glow-strong: 0 0 10px var(--neon-cyan), 0 0 20px var(--neon-cyan);
+    --glow-subtle: 0 0 5px rgba(0, 243, 255, 0.3);
+
+    --border-tech: 1px solid rgba(0, 243, 255, 0.3);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-core);
+    background-image:
+        radial-gradient(circle at 50% 50%, #0a1016 0%, #000 100%),
+        linear-gradient(rgba(0, 243, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(0, 243, 255, 0.03) 1px, transparent 1px);
+    background-size: 100% 100%, 40px 40px, 40px 40px;
+    color: var(--text-main);
+    font-family: var(--font-tech);
+    overflow: hidden;
+    /* App-like feel */
+    user-select: none;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--neon-cyan);
+    border-radius: 3px;
+}
+
+button {
+    font-family: var(--font-tech);
+}

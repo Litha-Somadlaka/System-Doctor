@@ -1,0 +1,13 @@
+{
+  "name": "systemdoc",
+  "version": "1.0.0",
+  "description": "- Node.js (v18+)\r - Rust (latest stable)\r - Python 3.11+",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tauri": "tauri dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
